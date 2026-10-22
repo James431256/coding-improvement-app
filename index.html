@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Recompile · get your Java back</title>
+  <meta name="description" content="Bite-size Java practice that builds from syntax refreshers to LeetCode Easy problems. Runs your code in the browser.">
+  <meta name="theme-color" content="#e8f2fa">
+  <link rel="icon" href="assets/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="assets/icon-192.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="modulepreload" href="js/app.js">
+</head>
+<body>
+  <div class="app">
+    <aside class="side">
+      <a class="brand" href="#/" aria-label="Recompile home"><span class="brand-mark" aria-hidden="true">&gt;</span><span class="brand-word">recompile<span class="caret"></span></span></a>
+      <nav class="side-nav" aria-label="Main"></nav>
+      <div class="side-foot">
+        <div class="side-stats">
+          <span class="stat-chip streak" title="Day streak"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20c-3.3 0-5.5-2.2-5.5-5.2 0-3.6 3.3-5.3 3.3-9.3 2.4 1.4 3.7 3.6 3.6 6 .9-.6 1.5-1.6 1.7-2.8 1.6 1.4 2.4 3.4 2.4 5.6 0 3.3-2.3 5.7-5.5 5.7z"/></svg><b data-stat="streak">0</b></span>
+          <span class="stat-chip xp" title="Total XP"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 3.5 6 13.5h5.2L10.5 20.5 18 10h-5.4z"/></svg><b data-stat="xp">0</b></span>
+        </div>
+        <label class="lang-pick"><span class="mini-label">Language</span><select class="lang-select" aria-label="Language"></select></label>
+      </div>
+    </aside>
+    <header class="topbar">
+      <a class="brand" href="#/" aria-label="Recompile home"><span class="brand-mark" aria-hidden="true">&gt;</span><span class="brand-word">recompile<span class="caret"></span></span></a>
+      <div class="top-stats">
+        <span class="stat-chip streak"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 20c-3.3 0-5.5-2.2-5.5-5.2 0-3.6 3.3-5.3 3.3-9.3 2.4 1.4 3.7 3.6 3.6 6 .9-.6 1.5-1.6 1.7-2.8 1.6 1.4 2.4 3.4 2.4 5.6 0 3.3-2.3 5.7-5.5 5.7z"/></svg><b data-stat="streak">0</b></span>
+        <span class="stat-chip xp"><svg class="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 3.5 6 13.5h5.2L10.5 20.5 18 10h-5.4z"/></svg><b data-stat="xp">0</b></span>
+      </div>
+    </header>
+    <main id="view" class="view" tabindex="-1">
+      <div class="boot">Loading…</div>
+    </main>
+    <nav class="tabbar" aria-label="Main"></nav>
+  </div>
+  <noscript><p style="padding:2rem">Recompile needs JavaScript to run.</p></noscript>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

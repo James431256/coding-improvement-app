@@ -1,0 +1,24 @@
+# Publishes main to the gh-pages branch, which GitHub Pages serves.
+name: Publish site
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publish-site
+  cancel-in-progress: true
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Push main to gh-pages
+        run: git push --force origin HEAD:gh-pages
